@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Administrate restaurant</h1>
+<h3>Add restaurant</h3>
+<form>
+    <label for="name">Name</label><br>
+    <input type=text name="name" id="name" required><br>
+    <label for="type">Type</label><br>
+    <input type=text name="type" id="type" required><br>
+    <label for="rating" >Rating</label><br>
+    <input type=number name="rating" id="rating" required><br>
+    <label for="phone">Phone</label><br>
+    <input type=tel name="phone" id="phone" required><br>
+    <label for="deltime">Time to deliver</label><br>
+    <input type=time name="deltime" id="deltime" required><br>
+    <label for="minprice">Min-price</label><br>
+    <input type=number name="minprice" id="minprice" required><br>
+    <label for="desc">Description</label><br>
+    <textarea name="desc" id="desc" required></textarea><br>
+    <label >Logo</label><br>
+    <input name="logo" type="file"><br>
+    <button>Submit</button>
+</form>
+
+<h2>List of all restaurants</h2>
+
+<div class="restaurants">
+    <div class="rest">
+        <h4 class="rest-name">Name</h4>
+        <img class="rest-logo" src="picture.png" alt="picture">
+        <p>Type: <span class="rest-type">type</span></p>
+        <p>Rating: <span class="rest-rating">5</span></p>
+        <p>Price: <span class="rest-price">40</span></p>
+        <p>Calories: <span class="rest-cals">1000</span></p>
+        <p>Weight: <span class="rest-weight">500</span></p>
+        <p>Number of orders: <span class="rest-num"></span></p>
+        <p>Description: <span class="rest-desc">bla-bla-bla</span></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="rest-edit">
+        <p><label>
+            Name:
+            <input type="text" name="rest-name" value="Rest">
+        </label></p>
+        <p><label>
+            Type:
+            <input type="text" name="rest-type" value="Type">
+        </label></p>
+        <p><label>
+            Rating:
+            <input type="number" name="rest-rating" value="5">
+        </label></p>
+        <p><label>
+            Price:
+            <input type="number" name="rest-price" value="1234124567891234">
+        </label></p>
+        <p><label>
+            Calories:
+            <input type="number" name="rest-cals" value="123">
+        </label></p>
+        <p><label>
+            Weight:
+            <input type="number" name="rest-weight" value="12345">
+        </label></p>
+        <p>Number of orders: <span class="rest-num">1234</span></p>
+        <p><label>
+            Description:
+            <textarea name="rest-desc"></textarea>
+        </label></p>
+        <p>
+            <label>
+                State:
+                <select name="state">
+                    <option value="0">Enabled</option>
+                    <option value="1">Disabled</option>
+                    <!--Должна быть указана причина почему юзер заблочен!!!-->
+                    <!--Должна быть указана причина почему юзер заблочен!!!-->
+                    <!--Должна быть указана причина почему юзер заблочен!!!-->
+                    <!--Должна быть указана причина почему юзер заблочен!!!-->
+                    <!--Должна быть указана причина почему юзер заблочен!!!-->
+                </select>
+            </label>
+        </p>
+        <button type="submit">Save</button>
+    </div>
+</div>
+</body>
+</html>

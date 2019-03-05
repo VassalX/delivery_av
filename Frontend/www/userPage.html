@@ -6,7 +6,10 @@
 </head>
 <body>
 
-<h1>User1</h1>
+<h1><span class="user-name">User1</span></h1>
+<ul>
+    <li><a href="login.html">Log out</a>
+</ul>
 <h2>Menu</h2>
 <ul>
     <li><a href="orderFood.html">Order food</a></li>
@@ -22,17 +25,13 @@
     </div>
     <div>
         <form class="formValidate">
-            <label >Full name</label><br>
-            <input ><br>
-            <label >Email</label><br>
-            <input ><br>
-            <label >Phone</label><br>
-            <input ><br>
-            <label >Password</label><br>
-            <input ><br>
-            <label >Current password</label><br>
-            <input ><br>
-            <button>Submit</button>
+            <p>Full name: <input type="text" name="user-name" value="Vasya"></p>
+            <p>Phone: <input type="tel" name="user-phone" value="12345"></p>
+            <p>E-mail: <input type="email" name="user-email" value="abc@abc.com"></p>
+            <p>Date birth: <input type="date" name="user-birth" value="2018-07-22"></p>
+            <p>Password: <input type="password" name="user-pass" value="12341245"></p>
+            <p>Confirm password: <input type="password" name="user-pass" value="12341245"></p>
+            <button type="submit">Submit</button>
         </form>
     </div>
 

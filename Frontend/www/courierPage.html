@@ -5,24 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-
-<h2>Menu:</h2>
-
+<h1><span class="courier-name">Courier1</span></h1>
 <ul>
     <li><a href="login.html">Log out</a>
 </ul>
-
 <section id="content">
     <div>
         <h2>Courier Details</h2>
+        <h3>Edit your details here which are required for delivery and contact.</h3>
+        <hr>
+        <h1>DETAILS</h1>
     </div>
     <hr>
     <div>
         <form class="formValidate">
-            <p>Full name: <span class="cour-name">Vasya</span></p>
-            <p>Phone: <span class="cour-phone">Phone</span></p>
-            <p>E-mail: <span class="cour-email">abc@abc.com</span></p>
-            <p>Num of deliveries: <span class="cour-delnum">100</span></p>
+            <p>Full name: <input type="text" name="courier-name" value="Vasya"></p>
+            <p>Phone: <input type="tel" name="courier-phone" value="12345"></p>
+            <p>E-mail: <input type="email" name="courier-email" value="abc@abc.com"></p>
+            <p>Card number: <input type="tel" name="courier-card" value="1234124567891234"
+                                   minlength="16" maxlength="16"></p>
+            <p>Date birth: <input type="date" name="courier-birth" value="2018-07-22"></p>
+            <p>Salary: <span class="courier-salary">12341245</span></p>
+            <p>Password: <input type="password" name="courier-pass" value="12341245"></p>
+            <p>Confirm password: <input type="password" name="courier-pass" value="12341245"></p>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <hr>
@@ -33,6 +39,7 @@
     </div>
     <hr>
     <h3>List of deliveries</h3>
+    <p>Num of deliveries: <span class="cour-delnum">100</span></p>
     <div class="delivery">
         <p>№: <span class="del-id">1</span></p>
         <p>State: <span class="del-state">Done</span></p>

@@ -8,40 +8,57 @@
 <h1>Administrate users</h1>
 <h3>Add user</h3>
 <form>
-    <label >Full name</label><br>
-    <input ><br>
-    <label >Email</label><br>
-    <input ><br>
-    <label >Phone</label><br>
-    <input ><br>
-    <label >Password</label><br>
-    <input ><br>
-    <label >Confirm password</label><br>
-    <input ><br>
-    <button>Submit</button>
+    <p>Full name: <input type="text" name="user-name"></p>
+    <p>Phone: <input type="tel" name="user-phone"></p>
+    <p>E-mail: <input type="email" name="user-email"></p>
+    <p>Date birth: <input type="date" name="user-birth"></p>
+    <p>Password: <input type="password" name="user-pass"></p>
+    <p>Confirm password: <input type="password" name="user-pass"></p>
+    <button type="submit">Submit</button>
 </form>
 
 <h2>List of all users</h2>
-
-<div class="user">
-    <p>Email: <span class="user-email">type</span></p>
-    <p>Full name: <span class="user-name">Vasya</span></p>
-    <p>Phone: <span class="user-phone">12341245</span></p>
-    <p>Password: <span class="user-pass">12341245</span></p>
-    <p>Date birth: <span class="user-birth">2018</span></p>
-    <p>
-        <label>State: </label>
-        <select>
-            <option value="0">Enabled</option>
-            <option value="1">Disabled</option>
-            <!--Должна быть указана причина почему юзер заблочен!!!-->
-            <!--Должна быть указана причина почему юзер заблочен!!!-->
-            <!--Должна быть указана причина почему юзер заблочен!!!-->
-            <!--Должна быть указана причина почему юзер заблочен!!!-->
-            <!--Должна быть указана причина почему юзер заблочен!!!-->
-        </select>
-    </p>
-    <button>Save</button>
+<div class="users">
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <div id="bla-bla" class="user-static">
+        <p>Full name: <span class="user-name">Vasya</span></p>
+        <p>Phone: <span class="user-phone">12341245</span></p>
+        <p>Email: <span class="user-email">email</span></p>
+        <p>Date birth: <span class="user-birth">2018</span></p>
+        <p>Password: <span class="user-pass">12341245</span></p>
+        <p>Confirm password: <span class="user-pass">12341245</span></p>
+        <p>State: <span name="user-state">Enabled</span></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="blabla" class="user-edit">
+        <p>Full name: <input type="text" name="user-name" value="Vasya"></p>
+        <p>Phone: <input type="tel" name="user-phone" value="12345"></p>
+        <p>E-mail: <input type="email" name="user-email" value="abc@abc.com"></p>
+        <p>Date birth: <input type="date" name="user-birth" value="2018-07-22"></p>
+        <p>Password: <input type="password" name="user-pass" value="12341245"></p>
+        <p>Confirm password: <input type="password" name="user-pass" value="12341245"></p>
+        <p>
+            <label>State: </label>
+            <select>
+                <option value="0">Enabled</option>
+                <option value="1">Disabled</option>
+                <!--Должна быть указана причина почему юзер заблочен!!!-->
+                <!--Должна быть указана причина почему юзер заблочен!!!-->
+                <!--Должна быть указана причина почему юзер заблочен!!!-->
+                <!--Должна быть указана причина почему юзер заблочен!!!-->
+                <!--Должна быть указана причина почему юзер заблочен!!!-->
+            </select>
+        </p>
+        <button type="submit">Save</button>
+    </div>
 </div>
 
 </body>

@@ -30,45 +30,96 @@
 <h2>List of all dishes</h2>
 
 <!--what restaurant to choose from-->
-<label for="dish-from">From restaurant</label>
+<label for="dish-from">Filter from restaurant</label>
 <select id="dish-from">
     <option>Restaurant #1</option>
     <option>Restaurant #2</option>
 </select>
 
-<div class="dish-state">
-    <h4 class="dish-name">Name</h4>
-    <p>Restaurant: <span class="dish-rest">Restaurant #1</span></p>
-    <img class="dish-pic" src="picture.png" alt="picture">
-    <p>Type: <span class="dish-type">type</span></p>
-    <p>Rating: <span class="dish-rating">5</span></p>
-    <p>Price: <span class="dish-price">40</span></p>
-    <p>Calories: <span class="dish-cals">1000</span></p>
-    <p>Weight: <span class="dish-weight">500</span></p>
-    <p>Number of Orders: <span class="dish-num"></span></p>
-    <p>Description: <span class="dish-desc">bla-bla-bla</span></p>
-    <p>State: <span class="dish-state">Enabled</span></p>
-</div>
-
-<div class="dish-edit">
-    <h4 class="dish-name">Name</h4>
-    <p>Restaurant: <span class="dish-rest">Restaurant #1</span></p>
-    <img class="dish-pic" src="picture.png" alt="picture">
-    <p>Type: <span class="dish-type">type</span></p>
-    <p>Rating: <span class="dish-rating">5</span></p>
-    <p>Price: <span class="dish-price">40</span></p>
-    <p>Calories: <span class="dish-cals">1000</span></p>
-    <p>Weight: <span class="dish-weight">500</span></p>
-    <p>Number of Orders: <span class="dish-num"></span></p>
-    <p>Description: <span class="dish-desc">bla-bla-bla</span></p>
-    <p>
-        <label for="state">State: </label>
-        <select id="state">
-            <option value="0">Enabled</option>
-            <option value="1">Disabled</option>
-        </select>
-    </p>
-    <button class="dish-edit">Save</button>
+<div class="dishes">
+    <div class="dish-static">
+        <h4 class="dish-name">Name</h4>
+        <p>Restaurant: <span class="dish-rest">Restaurant #1</span></p>
+        <img class="dish-pic" src="picture.png" alt="picture">
+        <p>Type: <span class="dish-type">type</span></p>
+        <p>Rating: <span class="dish-rating">5</span></p>
+        <p>Price: <span class="dish-price">40</span></p>
+        <p>Calories: <span class="dish-cals">1000</span></p>
+        <p>Weight: <span class="dish-weight">500</span></p>
+        <p>Number of orders: <span class="dish-num"></span></p>
+        <p>Description: <span class="dish-desc">bla-bla-bla</span></p>
+        <p>State: <span class="dish-state">Enabled</span></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="dish-edit">
+        <p>
+            <label>
+                Name:
+                <input type="text" name="dish-name" value="Rest">
+            </label>
+        </p>
+        <p>
+            <label>
+                Restaurant:
+                <select name="dish-rest">
+                    <option>Restaurant #1</option>
+                    <option>Restaurant #2</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                Picture:
+                <input type="file" name="dish-pic">
+            </label>
+        </p>
+        <p>
+            <label>
+                Type:
+                <input type="text" name="dish-type" value="Type">
+            </label>
+        </p>
+        <p>
+            <label>
+                Rating:
+                <input type="number" name="dish-rating" value="5">
+            </label>
+        </p>
+        <p>
+            <label>
+                Price:
+                <input type="number" name="dish-price" value="1234124567891234">
+            </label>
+        </p>
+        <p>
+            <label>
+                Calories:
+                <input type="number" name="dish-cals" value="123">
+            </label>
+        </p>
+        <p>
+            <label>
+                Weight:
+                <input type="number" name="dish-weight" value="12345">
+            </label></p>
+        <p>Number of orders: <span class="dish-num">1234</span></p>
+        <p><label>
+            Description:
+            <textarea name="dish-desc"></textarea>
+        </label></p>
+        <p>
+            <label>
+                State:
+                <select name="dish-state">
+                    <option value="0">Enabled</option>
+                    <option value="1">Disabled</option>
+                </select>
+            </label>
+        </p>
+        <button type="submit">Save</button>
+    </div>
 </div>
 </body>
 </html>

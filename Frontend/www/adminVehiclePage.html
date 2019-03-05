@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Administrate vehicles</h1>
+<h3>Add vehicle</h3>
+<form>
+    <p>Vehicle number: <input type="text" name="vehicle-number"></p>
+    <p>Vehicle brand: <input type="text" name="vehicle-brand"></p>
+    <p>Vehicle model: <input type="text" name="vehicle-model"></p>
+    <p>
+        <label>Assign to courier: </label>
+        <select>
+            <option value="0">Nobody</option>
+            <option value="1">Courier1</option>
+            <option value="2">Courier2</option>
+        </select>
+    </p>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>List of all vehicles</h2>
+<div class="vehicles">
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <!--id-->
+    <div id="bla-bla" class="vehicle-static">
+        <p>Vehicle number: <span class="vehicle-number">Vasya</span></p>
+        <p>Vehicle brand: <span class="vehicle-brand">Vasya</span></p>
+        <p>Vehicle model: <span class="vehicle-model">Vasya</span></p>
+        <p>Assigned to: <span class="courier-name">Courier1</span></p>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="blabla" class="vehicle-edit">
+        <p>Vehicle number: <input type="text" name="vehicle-number" value="Vasya"></p>
+        <p>Vehicle brand: <input type="text" name="vehicle-brand" value="Vasya"></p>
+        <p>Vehicle model: <input type="text" name="vehicle-model" value="Vasya"></p>
+        <p>
+            <label>Assign to courier: </label>
+            <select>
+                <option value="0">Nobody</option>
+                <option value="1" selected>Courier1</option>
+                <option value="2">Courier2</option>
+
+            </select>
+        </p>
+        <button type="submit">Save</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -8,23 +8,46 @@
 <h1>Administrate dish</h1>
 <h3>Add dish</h3>
 <form>
-    <label for="name">Name</label><br>
-    <input name="name" id="name" required><br>
-    <label for="type">Type</label><br>
-    <input name="type" id="type" required><br>
-    <label for="rating">Rating</label><br>
-    <input name="rating" id="rating" required><br>
-    <label for="price">Price</label><br>
-    <input name="price" id="price" required><br>
-    <label for="calories">Calories</label><br>
-    <input name="calories" id="calories" required><br>
-    <label for="weight">Weight</label><br>
-    <input name="weight" id="weight" required><br>
-    <label for="desc">Description</label><br>
-    <input name="desc" id="desc" required><br>
-    <label for="photo">Photo</label><br>
-    <input name="photo" id="photo" type="file"><br>
-    <button>Submit</button>
+    <label>
+        Name<br>
+        <input type="text" name="name">
+    </label>
+    <label>
+        <br>Restaurant<br>
+        <select name="rest">
+            <option>Restaurant #1</option>
+            <option>Restaurant #2</option>
+        </select>
+    </label>
+    <label>
+        <br>Type<br>
+        <input type="text" name="type">
+    </label>
+    <label>
+        <br>Rating<br>
+        <input type="number" name="rating">
+    </label>
+    <label>
+        <br>Price<br>
+        <input type="number" name="price">
+    </label>
+    <label>
+        <br>Calories<br>
+        <input type="number" name="cals">
+    </label>
+    <label>
+        <br>Weight<br>
+        <input type="number" name="weight">
+    </label>
+    <label>
+        <br>Description<br>
+        <textarea name="desc"></textarea>
+    </label>
+    <label>
+        <br>Picture<br>
+        <input type="file" name="pic">
+    </label>
+    <br><button type="submit">Add</button>
 </form>
 
 <h2>List of all dishes</h2>
